@@ -25,7 +25,7 @@ import plotly.express as px
 from PIL import Image
 import warnings
 import time
-
+import os
 warnings.filterwarnings('ignore')
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -62,8 +62,7 @@ def charger_donnees_optimisee():
     """Charge données une seule fois avec cache agressif."""
     try:
         # Chemin fichier
-       import os
-	file_path = os.path.join(os.path.dirname(__file__), "data", "flyaway_log_annuel_2025-1.xlsx")
+        file_path = os.path.join(os.path.dirname(__file__), "data", "flyaway_log_annuel_2025-1.xlsx")
         
         # Lecture optimisée
         df = pd.read_excel(

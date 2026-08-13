@@ -1,0 +1,17 @@
+Contenu du fichier :
+
+```toml
+[theme]
+primaryColor = "#1a472a"
+backgroundColor = "#f8fafc"
+secondaryBackgroundColor = "#e2e8f0"
+textColor = "#1f2937"
+font = "sans serif"
+
+[client]
+showErrorDetails = true
+
+[server]
+maxUploadSize = 200
+enableXsrfProtection = true
+```
